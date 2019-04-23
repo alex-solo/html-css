@@ -1,0 +1,16 @@
+.button {
+  padding: 10px;
+  font: 30px 'Rubik', Helvetica, Arial, sans-serif;
+  display: block;
+  margin-bottom: 20px;
+  border: 0;
+  box-shadow: 0 0 0 3px #333333;
+  -webkit-transition: 0.5s;
+  animation-duration: 0.5s;
+  transition: box-shadow 0.5s linear,
+}
+
+.button:hover {
+  box-shadow: 0 0 0 7px #333333; 
+}
+

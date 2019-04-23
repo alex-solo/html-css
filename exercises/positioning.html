@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Positioning</title>
+  <style>
+    #positioned {
+      text-align: center;
+      background-color: white;
+      width: 400px;
+      padding: 20px 0;
+      position: absolute;
+      top: 30px;
+      left: 50%;
+      margin-left: -200px;
+      box-sizing: border-box;
+      z-index: 2
+    }
+
+    #translucent {
+      position: fixed;
+      top: 0;
+      width: 100vw;
+      height: 100vh;
+      background: rgba(0, 0, 0, .6);
+      z-index: 1;
+    }
+
+    #corner {
+      position: absolute;
+      top: -10px;
+      left: -10px;
+      width: 20px;
+      height: 20px;
+      background: #fcfc99;
+    }
+  </style>
+</head>
+<body>
+  <p>Sed arcu felis, mollis luctus nisl sit amet, interdum semper turpis. Nam vitae suscipit dolor, vitae tempus ligula. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nulla feugiat id ante at condimentum. Sed id efficitur ligula. Sed condimentum purus neque, eget accumsan est facilisis a. Curabitur id nisl porttitor, blandit arcu vel, porttitor urna. Praesent tincidunt lorem blandit sem egestas, ac dictum mi hendrerit. Nam quis dignissim libero, vitae lacinia lorem. Suspendisse id condimentum purus. Sed sed tincidunt velit. Sed sagittis tellus vel ligula posuere dictum. Proin sed massa sed est mattis scelerisque id a ante. Vivamus aliquam vestibulum tortor, vitae feugiat nisi lacinia ac.</p>
+  <p>Maecenas id consequat risus. Nunc dapibus dapibus venenatis. Phasellus rutrum nec neque in pulvinar. Proin aliquam non augue et varius. Nam et lacinia arcu, consequat vestibulum sem. Aenean lobortis luctus elementum. Nullam interdum, velit ac mattis sollicitudin, velit eros mollis velit, at molestie magna mauris ac leo. Cras eu porttitor odio, at viverra mauris. Nulla iaculis euismod eros, non accumsan lorem lobortis vel. Maecenas ultrices id massa non commodo. Nulla facilisi. Pellentesque a neque vel elit pellentesque molestie. Donec purus eros, suscipit eu malesuada in, euismod congue massa. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec aliquam erat eu aliquet fermentum.</p>
+  <p>Quisque eleifend auctor urna laoreet egestas. Sed ac justo quis risus mattis consectetur. Suspendisse potenti. Aenean ut risus porttitor, sagittis magna id, placerat metus. Sed vitae est a turpis pellentesque commodo. Phasellus bibendum, diam vel pharetra finibus, augue ex tempor augue, sit amet tincidunt ipsum ex in quam. Vestibulum finibus tincidunt quam, sed porta nisi porta a.</p>
+  <p>Donec quis diam non libero euismod auctor a et ante. Ut eleifend risus ut urna elementum, sed vehicula mauris scelerisque. Aliquam in ornare mauris, at molestie quam. Curabitur malesuada, tortor quis faucibus efficitur, metus lorem consectetur lorem, a ornare lorem nunc at lectus. Integer quis erat ut mi iaculis elementum et vitae erat. Sed in erat ante. Nunc id libero ipsum. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed sapien velit, lacinia vel venenatis ac, posuere ut nunc. Vestibulum faucibus aliquet neque vehicula fringilla. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce et libero vitae ante scelerisque accumsan. Quisque aliquam libero at maximus rhoncus. Etiam in purus urna.</p>
+  <div id="translucent">
+    
+  </div>
+  <div id="positioned">
+    <div id="corner"></div>
+    I'm positioned!
+  </div>
+</body>
+</html>

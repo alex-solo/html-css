@@ -1,0 +1,75 @@
+main {
+  margin: 0 auto;
+  background-color: black;
+  max-width: 1000px;
+  padding: 10px;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+  font-size: 0;
+  margin: 0 -5px;
+}
+
+li {
+  display: inline-block;
+  width: 10%;
+  padding: 0 5px;
+  box-sizing: border-box;
+}
+
+
+img {
+  width: 100%;
+}
+
+@media screen and (max-width: 900px) {
+  /* CSS for tablets and larger */
+  li {
+    width: 20%;
+    margin-bottom: 10px;
+  }
+
+  li:nth-child(n + 4) {
+    width: 20%;
+    margin-bottom: 0;
+  }
+
+}
+
+@media screen and (max-width: 600px) {
+  /* CSS for tablets and larger */
+  li {
+    width: 50%;
+    margin-bottom: 10px;
+  }
+  
+  li:nth-child(n + 4) {
+    width: 50%;
+    margin-bottom: 10px;
+  }
+
+  li:nth-child(n + 9) {
+    margin-bottom: 0;
+  }
+
+}
+
+@media screen and (max-width: 500px) {
+  /* CSS for tablets and larger */
+  li {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  
+  li:nth-child(n + 4) {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  li:last-child {
+    margin-bottom: 0;
+  }
+
+}

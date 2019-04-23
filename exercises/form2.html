@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Form</title>
+</head>
+<body>
+  <form action="#" method="post">
+    <fieldset>
+      <label>
+        First Name:
+        <input type="text" name="first_name">
+      </label>
+      <label>
+        Last Name:
+        <input type="text" name="last_name">
+      </label>
+      <label>
+        Email address:
+        <input type="email" name="email" autocomplete="off" autocorrect="off" autocapitalize="none">
+      </label>
+      <label>
+        Phone Number:
+        <input type="tel" name="phone_num">
+        <label for="phone_type">Phone Type</label>
+        <select name="phone_type" id="phone_type">
+          <option value="home" selected>Home</option>
+          <option value="business">Business</option>
+          <option value="mobile">Mobile</option>
+        </select>
+      </label>
+    </fieldset>
+  </form>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>TEST</title>
+  <style>
+    .box-set:before,
+    .box-set:after {
+      content: "";
+      display: table;
+    }
+
+    .box-set:after {
+      clear: both;
+    }
+
+    .box-set {
+      clear:both;
+      *zoom: 1;
+    }
+
+    .box-set {
+      background-color: #eaeaed;
+    }
+    .box {
+      background: #2db34a;
+      height: 150px;
+      text-align: center;
+      float: left;
+      margin: 1.858736059%;
+      width: 29.615861214%;
+    }
+  </style>
+</head>
+<body>
+  <div class="box-set">
+    <figure class="box">Box 1</figure>
+    <figure class="box">Box 2</figure>
+    <figure class="box">Box 3</figure>
+  </div>
+</body>
+</html>

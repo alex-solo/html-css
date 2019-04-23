@@ -1,0 +1,115 @@
+@import url("css_reset.css");
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+body {
+  width: 900px;
+  margin: 0 auto;
+  background-color: #fdd52d;
+  font: normal 16px Helvetica, Arial, sans-serif;
+}
+
+header {
+  box-sizing: border-box;
+  height: 104px;
+  background-color: #1e7ebf;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  padding: 30px 0;
+  margin-bottom: 30px;
+}
+
+h1 {
+  padding: 0 25px;
+  font-size: 2.4em;
+  font-weight: 700;
+}
+
+h1 a {
+  text-decoration: none;
+  color: white;
+}
+
+main {
+  padding: 26px 25px;
+  background-color: #ececec;
+}
+
+h2 {
+  color: black;
+  font-size: 2em;
+  font-weight: bold;
+  padding: 0 0 25px 0;
+}
+
+ul {
+  list-style: none;
+}
+
+li:nth-of-type(4n+1) {
+  margin: 0;
+}
+
+li {
+  box-sizing: border-box;
+  width: 23.5%;
+  padding: 15px;
+  margin: 0 0 2% 2%;
+  background-color: white;
+  float: left;
+}
+
+label {
+  display: block;
+  cursor: pointer;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+figure {
+  display: block;
+  height: 160px;
+  width: 100%;
+}
+
+img {
+  display: block;
+  width: auto;
+  height: 140px;
+  margin: 0 auto;
+  padding-bottom: 20px;
+}
+
+h3 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  padding-bottom: 4px;
+}
+
+input[type="checkbox"]:checked + figure img {
+  position: absolute;
+  width: 400px;
+  height: auto;
+  left: 50%;
+  top: 100px;
+  z-index: 2;
+  margin-left: -200px;
+  height: auto;
+}
+
+input:checked + figure:before {
+  z-index: 1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  position: fixed;
+  content: "";
+  background: rgba(0, 0, 0, 0.4);
+}

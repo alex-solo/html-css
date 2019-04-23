@@ -1,0 +1,136 @@
+
+body {
+  font: normal 16px Helvetica, Arial, sans-serif;
+  width: 600px;
+  margin: 0 auto;
+}
+
+fieldset {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 7px 30px;
+  background: #ececec;
+  border: none;
+  border-left: 4px solid #cdcccb;
+  margin-bottom: 2px;
+}
+
+h1 {
+  font-weight: normal;
+  font-size: 1.75rem;
+  margin: 25px 0;
+}
+
+h2 {
+  font-weight: bold;
+  font-size: 1.25rem;
+  display: block;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  display: block;
+  color: #666766;
+  margin-bottom: 0.62rem;
+}
+
+label.checkbox {
+  position: relative;
+  padding: 0.9rem 0 1.5rem 1.5rem;
+  font-weight: normal;
+  font-size: 0.875rem;
+}
+
+label.checkbox input {
+  position: absolute;
+  top: 2px;
+  left: 0;
+}
+
+h2 label {
+  padding-bottom: 0;
+  color: inherit;
+}
+
+dl {
+  margin: 0;
+  padding: 0;
+}
+
+dd {
+  margin-left: 0;
+  
+}
+
+input[name="last_name"] {
+  margin-left: 2%;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea {
+  width: 100%;
+  box-sizing: border-box;
+  height: 40px;
+  padding: 0.31rem 0.5rem;
+  font-size: 0.85rem;
+  border: 1px solid #2e67b2;
+  border-radius: 5px;
+  margin-bottom: 1.5rem
+}
+
+input[name*="name"] {
+  box-sizing: border-box;
+  display: inline-block;
+  width: 49%;
+}
+
+dl.partial {
+  display: inline-block;
+  box-sizing: border-box;
+  padding-right: 1.25rem;
+}
+
+dl.half {
+  width: 50%;
+}
+
+dl.third {
+  width: 33.33%;
+}
+
+dl.last {
+  padding-right: 0;
+}
+
+input[name="profile_name"] {
+  width: 100%;
+}
+
+textarea {
+  height: auto;
+  max-height: 17.5rem;
+  resize: vertical;
+}
+
+input[name="message"] {
+  margin-top: 15px;
+}
+
+input[type="submit"] {
+  color: #ffffff;
+  font-weight: bold;
+  font: normal 1rem Helvetica, Arial, sans-serif;
+  background-color: #2e67b2;
+  border-radius: 5px;
+  height: 46px;
+  width: 176px;
+  margin-bottom: 25px;
+}
+
+input[type="submit"]:hover {
+  background-color: #6095cb;
+  cursor: pointer;
+}

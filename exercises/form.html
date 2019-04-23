@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Form</title>
+  <style>
+    label {
+      color: blue;
+    }
+  </style>
+</head>
+<body>
+  <form action="#" method="post">
+    <fieldset>
+      <dl>
+        <dt><label for="name">Your name</label></dt>
+        <dd><input type="text" name="name" id="name" required></dd>
+        <dt><label for="email">Email</label></dt>
+        <dd><input type="email" name="email" id="email" required></dd>
+        <dt><label for="phone">Phone Number</label></dt>
+        <dd><input type="tel" name="phone" id="phone" placeholder="###-###-####" required></dd>
+        <dt><label for="msg">Message</label></dt>
+        <dd><textarea name="msg" id="msg" cols="30" rows="10" required>Type Your Message Here.</textarea></dd>
+      </dl>
+    </fieldset>
+      
+    <fieldset>
+      <button type="submit">Send Message</button>
+      <button type="reset">Clear</button>
+    </fieldset>
+  </form>
+</body>
+</html>

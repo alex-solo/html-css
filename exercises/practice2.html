@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Practice</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+      }
+
+      body {
+        font: normal 16px Helvetica, Arial, sans-serif;
+      }
+
+      #container {
+        max-width: 575px;
+        min-width: 400px;
+        box-sizing: border-box;
+        margin: 0 auto;
+        padding: 30px;
+        border: 1px solid black;
+      }
+      
+      fieldset {
+        border: none;
+      }
+
+      dl {
+        margin-bottom: 20px;
+      }
+
+      dt, dd {
+        display: inline-block;
+        box-sizing: border-box;
+        vertical-align: middle;
+      }
+
+      .description dt {
+        vertical-align: top;
+      }
+
+      dt {
+        width: 18%;
+        padding: 10px 0;
+      }
+
+      dd {
+        width: 82%;
+        position: relative;
+      }
+
+      input[type="text"],
+      select,
+      textarea {
+        font: 300 16px Helvetica, Arial, sans-serif;
+        width: 100%;
+        color: #060606;
+        padding: 9px 10px;
+        box-sizing: border-box;
+        border: 1px solid #cecece;
+      }
+
+
+      .pulldown {
+        display: inline-block;
+        width: 30%;
+        position: relative;
+        box-sizing: border-box;
+      }
+
+      .forwardslash {
+        display: inline-block;
+        box-sizing: border-box;
+        width: 5%;
+        text-align: center;
+        height: auto;
+      }
+
+      
+      
+
+      .pulldown::after {
+        content: "◀ ▶";
+        position: absolute;
+        -webkit-transform: rotate(90deg);
+        -moz-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+        transform: rotate(90deg);
+        right: 5px;
+        font-size: 8px;
+        top: 13px;
+        pointer-events: none;
+      }
+
+      select {
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        appearance: none;
+        background-color: #ffffff;
+        display: inline-block;
+        border-radius: 0;
+      }
+
+      label.offset {
+        position: absolute;
+        left: -200em;
+      }
+
+      textarea {
+        resize: none;
+        height: 140px;
+      }
+
+      input[type="submit"] {
+        width: 46%;
+        background-color: #148fd5;
+        color: #ffffff;
+        font: inherit;
+        font-weight: 300;
+        letter-spacing: 1px;
+        margin-right: 4%;
+        border: none;
+        border-radius: 4px;
+        padding: 9px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <form action="#" method="post">
+        <fieldset>
+          <dl>
+            <dt><label for="title">Title</label></dt><!--
+            --><dd><input type="text" name="title" id="title" placeholder="Item 2"></dd>
+          </dl>
+          
+          <dl>
+            <dt><label for="day">Due Date</label></dt><!--
+            --><dd>
+              <div class="pulldown">
+                <label for="day" class="offset">Day</label>
+                <select id="day" name="due_date">
+                  <option>1</option>       
+                  <option>2</option>       
+                  <option>3</option>       
+                  <option>4</option>       
+                  <option>5</option>       
+                  <option>6</option>       
+                  <option>7</option>       
+                  <option>8</option>       
+                  <option>9</option>       
+                  <option>10</option>          
+                </select>
+              </div><!--
+              --><div class="forwardslash">/</div><!--
+              --><div class="pulldown">
+                <label for="month" class="offset">Day</label> 
+                <select id="month" name="due_date"> 
+                  <option selected disabled>Month</option>
+                  <option>January</option>       
+                  <option>February</option>       
+                  <option>March</option>       
+                  <option>April</option>       
+                  <option>May</option>       
+                  <option>June</option>       
+                  <option>July</option>       
+                  <option>August</option>       
+                  <option>September</option>       
+                  <option>October</option>       
+                  <option>November</option>       
+                  <option>December</option>       
+                </select> 
+              </div><!--
+              --><div class="forwardslash">/</div><!--
+              --><div class="pulldown">
+                <select id="year" name="due_date">
+                  <option selected disabled>Year</option>
+                  <option>1980</option>       
+                  <option>1981</option>       
+                  <option>1982</option>       
+                  <option>1983</option>       
+                  <option>1984</option>       
+                  <option>1985</option>       
+                  <option>1986</option>       
+                  <option>1987</option>       
+                  <option>1988</option>       
+                  <option>1989</option>          
+                </select>
+              </div>
+            </dd>
+          </dl>
+          
+          <dl class="description">
+            <dt><label for="description">Description</label></dt><!--
+            --><dd><textarea name="description" id="description" cols="30" rows="10">Description</textarea></dd>
+          </dl>
+
+          <dl class="buttons">
+            <dt><label for="save" class="offset">Save</label></dt><!--
+            --><dd>
+              <input type="submit" value="Save" id="save"><!--
+              --><input type="submit" value="Mark As Complete" id="mark">
+            </dd>
+          </dl>
+        </fieldset>
+      </form>
+    </div>
+
+  </body>
+</html>

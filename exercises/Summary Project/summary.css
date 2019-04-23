@@ -1,0 +1,253 @@
+* {
+  box-sizing: border-box;
+}
+
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: block;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+body {
+    display: block;
+    margin: 8px;
+    color: #545459;
+    background: #fff;
+}
+
+.container {
+  border: 2px solid black;
+  font: normal 16px Helvetica, Arial, sans-serif;
+  width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1, h2 {
+  font-weight: bold;
+  font-size: 24px;
+  color: #ce4a4a;
+  margin: 20px 0;
+}
+
+p {
+  line-height: 35px;
+  margin-bottom: 25px;
+}
+
+p.bold {
+  font-weight: bold;
+}
+
+.border {
+  border: 2px dashed black;
+  width: 650px;
+  padding: 30px;
+  margin: 45px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.inline-margin a {
+  margin: 30px;
+}
+
+.inline-padding a {
+  background-color: green;
+  padding: 30px;
+  color: white;
+}
+
+.inline-float a {
+  float: left;
+  width: 120px;
+  margin: 15px;
+  background-color: green;
+  padding: 25px;
+  color: white;
+  text-align: center;
+  border: 2px solid darkgreen;
+}
+
+.wrapper {
+  margin-bottom: 35px;
+}
+
+.box-1 {
+  background-color: blue;
+  color: white;
+}
+
+.box-2 {
+  background-color: green;
+  color: white;
+  height: 60px;
+  padding: 20px;
+  margin: 20px;
+}
+
+.box-3 {
+  background-color: orange;
+  color: white;
+  width: 90px;
+}
+
+.fl-1 {
+  float: left;
+  background-color: blue;
+  border: 1px solid orange;
+  color: white;
+}
+
+.fl-2 {
+  float: right;
+  background-color: orange;
+  color: white;
+}
+
+.fl-3 {
+  float: left;
+  width: 400px;
+  height: 70px;
+  line-height: 70px;
+  color: white;
+  background-color: orange;
+  text-align: center;
+}
+
+.fl-4 {
+  float: right;
+  width: 400px;
+  height: 70px;
+  line-height: 70px;
+  color: white;
+  background-color: blue;
+  text-align: center;
+}
+
+a.bl-a {
+  display: block;
+  color: white;
+  background-color: blue;
+  text-align: center;
+  padding: 10px;
+  margin: 10px;
+}
+
+.in-bl .nav {
+  text-align: center;
+
+}
+
+.in-bl .nav a {
+  display: inline-block;
+  width: 180px;
+  background-color: blue;
+  color: white;
+  border: 1px solid darkblue;
+  padding: 20px 30px;
+  margin: 20px 8px 25px 8px;
+}
+
+.in-bl:after {
+  display: block;
+  content: "";
+  width: 100%;
+  padding-top: 30px;
+  border-bottom: 2px dashed black;
+}
+
+.pos-fl h1 {
+  text-align: center;
+}
+
+.pos-fl .fl-box-1 {
+  width: 450px;
+  height: 100px;
+  float: left;
+  line-height: 100px;
+  text-align: center;
+  font-weight: bold;
+  color: white;
+  background-color: orange;
+}
+
+.pos-fl .fl-box-2 {
+  width: 505px;
+  height: 100px;
+  float: left;
+  line-height: 100px;
+  text-align: center;
+  font-weight: bold;
+  color: white;
+  background-color: blue;
+}
+
+.pos-fl .fl-box-3 {
+  clear: both;
+  width: 955px;
+  height: 40px;
+  float: left;
+  line-height: 40px;
+  text-align: center;
+  font-weight: bold;
+  color: white;
+  background-color: green;
+  margin-bottom: 35px;
+}
+
+.pos ul {
+  margin: 0 0 45px 40px;
+
+}
+
+.pos ul li {
+  font-style: italic;
+  margin-bottom: 10px;
+}
+
+.fix-pos div {
+  position: fixed;
+  padding: 30px;
+  border-radius: 8px;
+  background-color: blue;
+  color: white;
+  bottom: 20px;
+  left: 20px;
+}
+
+.pos-rel .rel-box {
+  position: relative;
+  padding: 25px 35px;
+  margin-bottom: 30px;
+  width: 325px;
+  border-radius: 8px;
+  background-color: orange;
+  color: white;
+  bottom: -45px;
+  right: 90px;
+}
+
+.pos-abs {
+  position: relative;
+}
+
+.pos-abs .abs-box {
+  width: 200px;
+  text-align: center;
+  background-color: green;
+  color: white;
+  padding: 25px 35px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  position: absolute;
+  top: -30px;
+  left: 300px;
+}

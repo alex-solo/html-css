@@ -1,0 +1,64 @@
+
+body {
+  margin: 0;
+  background-color: #151515;
+  font: normal 16px Helvetica, Arial, sans-serif;
+  color: #f0f0f0;
+}
+
+main {
+  background-color: #333333;
+  display: block;
+  margin: 0 auto;
+  padding: 25px 20px 20px 20px;
+  min-width: 600px;
+  max-width: 1000px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+figure {
+  margin: 0;
+  padding-bottom: 30px;
+}
+
+figure img {
+  margin-top: 20px;
+  border: 15px solid white;
+  box-sizing: border-box;
+}
+
+figcaption {
+  text-align: left;
+  padding-top: 4px;
+}
+
+ul {
+  font-size: 0;
+  padding: 0;
+  margin: -15px;
+}
+
+li {
+  display: inline-block;
+  vertical-align: top;
+  box-sizing: border-box;
+  padding: 0 15px;
+  width: 25%;
+}
+
+
+li img {
+  box-sizing: border-box;
+  border: 3px solid white;
+  height: auto;
+}
